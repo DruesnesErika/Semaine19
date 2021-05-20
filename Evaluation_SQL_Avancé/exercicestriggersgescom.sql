@@ -8,8 +8,6 @@ CREATE TABLE commander_articles (
     codart INT NOT NULL,
     qte INT,
     datedecommande DATETIME
-    ,CONSTRAINT commander_articles_codart_FK FOREIGN KEY (codart) REFERENCES products(pro_id)
-    ,CONSTRAINT commander_article_PK PRIMARY KEY (codart)
 )
 ENGINE=InnoDB;
 
